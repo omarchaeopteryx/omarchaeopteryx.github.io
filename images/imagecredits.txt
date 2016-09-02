@@ -1,0 +1,86 @@
+# Image Credits
+# Omar Malik
+# Sept 1, 2016
+
+Image 1
+Object:
+Red Spruce (Picea rubens)
+
+URL: https://upload.wikimedia.org/wikipedia/commons/a/ad/Picea_rubens_UGA5349098.jpg
+
+Author: Keith Kanoti, Maine Forest Service, Bugwood.org
+
+License: https://creativecommons.org/licenses/by/3.0/
+
+***
+
+Image 2
+Object: Balsam Fir (Abies balsamea)
+
+URL:
+https://commons.wikimedia.org/wiki/Abies_balsamea#/media/File:Abies_balsamea_MtWashington.jpg
+
+Author:
+jbarreiros on Flickr
+
+License:
+https://creativecommons.org/licenses/by-sa/2.0/
+
+***
+
+Image 3
+Object: Balsam fir range map
+
+URL:
+https://commons.wikimedia.org/wiki/Abies_balsamea#/media/File:Abies_balsamea_range_map_3.png
+
+Author:
+Elbert L. Little, Jr., U.S. Department of Agriculture, Forest Service, and others
+
+License:
+Public Domain
+
+***
+
+Image 4
+Object: Eastern Hemlock (Tsuga canadensis)
+
+URL:
+https://commons.wikimedia.org/wiki/Category:Tsuga_canadensis#/media/File:2013-08-25_15_39_09_Closeup_of_Eastern_Hemlock_foliage_across_Taborton_Road_from_the_entrance_to_Spring_Lake_in_Berlin,_New_York.jpg
+
+Author:
+Famartin
+
+License:
+http://creativecommons.org/licenses/by-sa/3.0
+
+***
+
+Image 4
+Object:
+Eastern White Pine (Pinus strobus)
+
+URL:
+https://upload.wikimedia.org/wikipedia/commons/5/54/Pinus_strobus_Acadia_0352.jpg
+
+Author:
+Harvey Barrison from Massapequa, NY, USA
+
+License:
+https://creativecommons.org/licenses/by-sa/2.0/
+
+***
+
+Image 5
+Object: Range map of Eastern White Pine
+
+URL:
+https://en.wikipedia.org/wiki/Pinus_strobus#/media/File:Pinus_strobus_range_map_1.png
+
+Author:
+Elbert L. Little, Jr., U.S. Department of Agriculture, Forest Service, and others - USGS Geosciences and Environmental Change Science Center: Digital Representations of Tree Species Range Maps from "Atlas of United States Trees" by Elbert L. Little, Jr. (and other publications)
+
+License:
+Public Domain
+
+***
