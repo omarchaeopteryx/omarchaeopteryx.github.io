@@ -1,2 +1,58 @@
 /*This is a test*/
 body {background:green}
+
+/* Using a class-cased styling scheme for names */
+main .species {
+  color:#003300;
+}
+
+/* Adding bg image from directory and styling website main title */
+h1 {
+  font-family:Georgia;
+  text-align:center;
+  display:relative;
+  font-size:3em;
+  color:#cc4400;
+  text-shadow: 1px 1px 1px #111;
+  background-image:url('images/Picea_rubens_UGA5349098.jpg');
+}
+
+img {
+  margin:2%;
+  margin-left:10%;
+}
+
+h2,h3 {
+  color:maroon;
+}
+
+blockquote {
+  padding:10px;
+  border:10px
+  font-family:Georgia;
+  font-size:1.5em;
+  color:white;
+  text-shadow: 1px 1px 1px #000;
+}
+
+body p,ul {
+  color:silver;
+}
+
+/* Centering the footer */
+footer p {
+  text-align:center;
+  font-weight:bold;
+  color:black;
+}
+
+/* Adding an ID-based styling */
+p#sighting {
+  color:purple;
+  font-size:1.5em;
+}
+
+/* Adding visited link */
+a:visited {
+    color: lightgreen;
+}
