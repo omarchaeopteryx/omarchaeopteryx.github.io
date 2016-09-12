@@ -3,16 +3,16 @@
 <head>
 	<title>Submit Your Sighting</title>
 </head>
-<body bgcolor="#006600">
-	<h1><font color="maroon">Submit Your Sighting</font></h1>
+<link rel="stylesheet" href="styles.css" type="text/css">
+<body>
+	<h1>Submit Your Sighting</h1>
 	<p>Please share your conifer species sighting here.
 <form action="index.html">
-	<div>
-    	<label><font color=white>What's the location of the tree stand?</label>
+	<section class="question">
+    	<label>What's the location of the tree stand?</label>
     	<input type="text" name="loc" placeholder="Ex: Portland, Maine">
-  	</div>
-		<br>
-  	<div>
+  	</section>
+  	<section class="question">
   		<label>Which species did you see?</label>
   		<select name="tree">
         <option value="species">Red Spruce (Picea rubens)</option>
@@ -20,19 +20,17 @@
         <option value="species">Eastern Hemlock (Tsuga canadensis)</option>
 				<option value="species">Eastern White Pine (Pinus strobus)</option>
       </select>
-    </div>
-		<br>
-    <div>
-    	<label>Do you have any notes to add?</label>
-    	<br>
-    	<textarea name="textarea" rows="10" cols="50">Write here</textarea>
-		</font>
-				</fieldset>
-		<br>
+    </section>
+    <section class="question">
+			<fieldset>
+    		<label>Do you have any notes to add?</label>
+    		<textarea name="textarea" rows="10" cols="50">Write here</textarea>
+			</fieldset>
 		<button name="data" type="submit">Submit!</button>
+	</section>
 	</form>
-	</div>
-	<div>
+	<nav>
 		<p>Return to the <a href="index.html">home page</a>.
+	</nav>
 </body>
 </html>
