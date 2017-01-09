@@ -18,8 +18,12 @@ main {
 #my-greeting {
 
   font-size:5em;
-  /*display: none;*/
 
+}
+
+#my-contact {
+
+  display: none;
 }
 
 
