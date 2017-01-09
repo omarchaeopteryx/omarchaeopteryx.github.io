@@ -15,15 +15,18 @@ main {
 
 }
 
-#my-greeting {
+#center-box {
 
+  display: block;
   font-size:5em;
-
 }
 
-#my-contact {
 
+#right-box, #upper-box, #lower-box, #left-box {
+
+  font-size: 1em;
   display: none;
+
 }
 
 
