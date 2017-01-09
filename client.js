@@ -27,7 +27,7 @@ $( document ).ready(function() {
 
     // Use this area to make mobile functionality:
 
-    $(document).on("swipeleft", function() {
+    $("#canvas").on("swipeleft", function() {
       console.log("You swiped to go right!")
       var current = checkCenter(coordinateTracker);
       $("#canvas").find(current).hide();
