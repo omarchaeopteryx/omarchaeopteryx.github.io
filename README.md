@@ -1,3 +1,7 @@
-# omarchaeopteryx.github.io
+# Omar M. (@omarchaeopteryx)
 
-This project is licensed under the terms of the MIT license.
+Welcome to my personal site. This is a simple website built using HTML, CSS, and JavaScript.
+
+Please get in touch to collaborate: `omar.a.malik@icloud.com`
+
+Thanks!
