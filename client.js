@@ -1,5 +1,17 @@
 var coordinateTracker = [0,0];
 
+$(document).on('pageinit', function(event){
+   $("main").swiperight(function() {
+     console.log("You swiped to go right!")
+     var current = checkCenter(coordinateTracker);
+     $("#canvas").find(current).hide();
+     coordinateTracker[0] += 1;
+     var replacement = checkCenter(coordinateTracker);
+     $("#canvas").find(replacement).show();
+     return coordinateTracker
+    });
+});
+
 $( document ).ready(function() {
 
     // Setting up website methods:
@@ -28,15 +40,15 @@ $( document ).ready(function() {
 
     // Use this area to make mobile functionality:
 
-    $("main").on("swipeleft", function() {
-      console.log("You swiped to go right!")
-      var current = checkCenter(coordinateTracker);
-      $("#canvas").find(current).hide();
-      coordinateTracker[0] += 1;
-      var replacement = checkCenter(coordinateTracker);
-      $("#canvas").find(replacement).show();
-      return coordinateTracker
-    });
+    // $("main").on("swipeleft", function() {
+    //   console.log("You swiped to go right!")
+    //   var current = checkCenter(coordinateTracker);
+    //   $("#canvas").find(current).hide();
+    //   coordinateTracker[0] += 1;
+    //   var replacement = checkCenter(coordinateTracker);
+    //   $("#canvas").find(replacement).show();
+    //   return coordinateTracker
+    // });
 
     // More to come...
 
