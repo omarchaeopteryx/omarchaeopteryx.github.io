@@ -1,4 +1,5 @@
-    var coordinateTracker = [0,0];
+var coordinateTracker = [0,0];
+
 $( document ).ready(function() {
 
     // Setting up website methods:
@@ -27,7 +28,7 @@ $( document ).ready(function() {
 
     // Use this area to make mobile functionality:
 
-    $("#canvas").on("swipeleft", function() {
+    $("main").on("swipeleft", function() {
       console.log("You swiped to go right!")
       var current = checkCenter(coordinateTracker);
       $("#canvas").find(current).hide();
