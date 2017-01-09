@@ -27,12 +27,17 @@ $( document ).ready(function() {
 
     // Use this area to make mobile functionality:
 
-    // $("#center-box").on("swipeleft",function(){
-    //   coordinateTracker[0] += 1;
-    //   console.log(coordinateTracker);
-    //   var newItem = $("#right-box").show();
-    //   centerCanvas.html(newItem);
-    // });
+    $(document).on("swipeleft", function() {
+      console.log("You swiped to go right!")
+      var current = checkCenter(coordinateTracker);
+      $("#canvas").find(current).hide();
+      coordinateTracker[0] += 1;
+      var replacement = checkCenter(coordinateTracker);
+      $("#canvas").find(replacement).show();
+      return coordinateTracker
+    });
+
+    // More to come...
 
     // Use this area to make desktop functionality:
 
