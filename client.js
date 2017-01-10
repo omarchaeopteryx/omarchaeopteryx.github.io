@@ -64,23 +64,68 @@ $( document ).ready(function() {
 
     // Use this area to make mobile functionality:
 
-    // $("main").on("swipeleft", function() {
-    //   console.log("You swiped to go right!")
-    //   var current = checkCenter(coordinateTracker);
-    //   $("#canvas").find(current).hide();
-    //   coordinateTracker[0] += 1;
-    //   var replacement = checkCenter(coordinateTracker);
-    //   $("#canvas").find(replacement).show();
-    //   return coordinateTracker
-    // });
-
-    // More to come...
+    // //  TO BE DEVELOPED
 
     // Use this area to make desktop functionality:
 
+      // // Making arrows clickeable (TO BE REFACTORED):
+
+
+      $(".fa.fa-chevron-left").on("click", function(){
+
+        var current = checkCenter(coordinateTracker);
+        $("#canvas").find(current).hide();
+        coordinateTracker[0] -= 1; // Changing the x-coordinate.
+                  checkArrows(coordinateTracker);
+        var replacement = checkCenter(coordinateTracker);
+        $("#canvas").find(replacement).fadeIn();
+        return coordinateTracker
+
+      })
+
+      $(".fa.fa-chevron-up").on("click", function() {
+
+            var current = checkCenter(coordinateTracker);
+            $("#canvas").find(current).hide();
+            coordinateTracker[1] += 1; // Changing the y-coordinate.
+                      checkArrows(coordinateTracker);
+            var replacement = checkCenter(coordinateTracker);
+            $("#canvas").find(replacement).fadeIn();
+            return coordinateTracker
+
+          })
+
+      $(".fa.fa-chevron-right").on("click", function() {
+
+        var current = checkCenter(coordinateTracker);
+        $("#canvas").find(current).hide();
+        coordinateTracker[0] += 1;
+                  checkArrows(coordinateTracker);
+        var replacement = checkCenter(coordinateTracker);
+        $("#canvas").find(replacement).fadeIn();
+        return coordinateTracker
+
+      })
+
+
+      $(".fa.fa-chevron-down").on("click", function() {
+
+        var current = checkCenter(coordinateTracker);
+        $("#canvas").find(current).hide();
+        coordinateTracker[1] -= 1;
+                  checkArrows(coordinateTracker);
+        var replacement = checkCenter(coordinateTracker);
+        $("#canvas").find(replacement).fadeIn();
+        return coordinateTracker
+
+      })
+
+
+      // // Making the directional keys operational:
+
     $(document).keydown(function(e) {
 
-      e.preventDefault(); // prevent the default action (scroll / move caret)
+      e.preventDefault();
 
       switch(e.which) {
 
@@ -132,7 +177,6 @@ $( document ).ready(function() {
 
 
       }
-
 
 
     });
