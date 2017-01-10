@@ -84,6 +84,27 @@ td {
 
 }
 
+img#top {
+
+  position: absolute;
+  z-index: -1;
+  opacity: 0.3;
+  left: 0%;
+  top: 0%;
+
+
+}
+
+img#bottom {
+
+  position: absolute;
+  z-index: -2;
+  opacity: 0.3;
+  left: 0%;
+  top: 70%;
+
+}
+
 
 /* Adding media link when shrinking page */
 

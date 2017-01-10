@@ -80,7 +80,7 @@ $( document ).ready(function() {
 
     $(document).keydown(function(e) {
 
-      // e.preventDefault(); // prevent the default action (scroll / move caret)
+      e.preventDefault(); // prevent the default action (scroll / move caret)
 
       switch(e.which) {
 
