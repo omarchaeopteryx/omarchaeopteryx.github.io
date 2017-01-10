@@ -11,13 +11,15 @@ main {
 
   display: flex;
   justify-content: center;
-  padding-top: 25vh;
+  padding-top: 10vh;
 
 }
 
 #canvas {
 
   display: inline-block;
+  width: 60vh;
+  height: 60vh;
 
 }
 
@@ -25,11 +27,17 @@ td {
     text-align: center;
 }
 
+
 #center-box {
 
   display: inline-block;
   font-size:5em;
 
+}
+
+.fa {
+
+  color: lightGrey;
 }
 
 
