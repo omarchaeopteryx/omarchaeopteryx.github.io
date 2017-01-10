@@ -15,10 +15,21 @@ main {
 
 }
 
+#canvas {
+
+  display: inline-block;
+
+}
+
+td {
+    text-align: center;
+}
+
 #center-box {
 
-  display: block;
+  display: inline-block;
   font-size:5em;
+
 }
 
 
@@ -29,6 +40,31 @@ main {
 
 }
 
+
+.fa.fa-chevron-up {
+  display: flex;
+  justify-content: center;
+  font-size: 1em;
+}
+
+.fa.fa-chevron-down {
+  display: flex;
+  justify-content: center;
+  font-size: 1em;
+}
+
+.fa.fa-chevron-left {
+  float:left;
+  font-size: 1em;
+}
+
+.fa.fa-chevron-right {
+  float:right;
+  display: inline-block;
+  vertical-align: middle;
+  position:relative;
+  font-size: 1em;
+}
 
 
 /* Adding media link when shrinking page */
