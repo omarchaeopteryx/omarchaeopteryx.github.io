@@ -91,7 +91,7 @@ $( document ).ready(function() {
           coordinateTracker[0] -= 1; // Changing the x-coordinate.
                     checkArrows(coordinateTracker);
           var replacement = checkCenter(coordinateTracker);
-          $("#canvas").find(replacement).show();
+          $("#canvas").find(replacement).fadeIn();
           return coordinateTracker
           break;
 
@@ -102,7 +102,7 @@ $( document ).ready(function() {
           coordinateTracker[1] += 1; // Changing the y-coordinate.
                     checkArrows(coordinateTracker);
           var replacement = checkCenter(coordinateTracker);
-          $("#canvas").find(replacement).show();
+          $("#canvas").find(replacement).fadeIn();
           return coordinateTracker
           break;
 
@@ -113,7 +113,7 @@ $( document ).ready(function() {
           coordinateTracker[0] += 1;
                     checkArrows(coordinateTracker);
           var replacement = checkCenter(coordinateTracker);
-          $("#canvas").find(replacement).show();
+          $("#canvas").find(replacement).fadeIn();
           return coordinateTracker
           break;
 
@@ -124,7 +124,7 @@ $( document ).ready(function() {
           coordinateTracker[1] -= 1;
                     checkArrows(coordinateTracker);
           var replacement = checkCenter(coordinateTracker);
-          $("#canvas").find(replacement).show();
+          $("#canvas").find(replacement).fadeIn();
           return coordinateTracker
           break;
 
