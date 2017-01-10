@@ -37,6 +37,30 @@ $( document ).ready(function() {
 
     }
 
+    function checkArrows(coordinateTracker) {
+
+      if (checkCenter(coordinateTracker) === "#center-box") {
+        console.log("You are at center box.")
+        $(".fa").show()
+      } else if (checkCenter(coordinateTracker) === "#left-box") {
+        console.log("You are in left box.")
+        $(".fa").hide()
+        $(".fa.fa-chevron-right").show()
+      } else if (checkCenter(coordinateTracker) === "#right-box") {
+        console.log("You are in right box.")
+        $(".fa").hide()
+        $(".fa.fa-chevron-left").show()
+      } else if (checkCenter(coordinateTracker) === "#lower-box") {
+        console.log("You are in lower box.")
+        $(".fa").hide()
+        $(".fa.fa-chevron-up").show()
+      } else if (checkCenter(coordinateTracker) === "#upper-box") {
+        console.log("You are in upper box.")
+        $(".fa").hide()
+        $(".fa.fa-chevron-down").show()
+      }
+    }
+
 
     // Use this area to make mobile functionality:
 
@@ -65,6 +89,7 @@ $( document ).ready(function() {
           var current = checkCenter(coordinateTracker);
           $("#canvas").find(current).hide();
           coordinateTracker[0] -= 1; // Changing the x-coordinate.
+                    checkArrows(coordinateTracker);
           var replacement = checkCenter(coordinateTracker);
           $("#canvas").find(replacement).show();
           return coordinateTracker
@@ -75,7 +100,7 @@ $( document ).ready(function() {
           var current = checkCenter(coordinateTracker);
           $("#canvas").find(current).hide();
           coordinateTracker[1] += 1; // Changing the y-coordinate.
-          // console.log(coordinateTracker);
+                    checkArrows(coordinateTracker);
           var replacement = checkCenter(coordinateTracker);
           $("#canvas").find(replacement).show();
           return coordinateTracker
@@ -86,6 +111,7 @@ $( document ).ready(function() {
           var current = checkCenter(coordinateTracker);
           $("#canvas").find(current).hide();
           coordinateTracker[0] += 1;
+                    checkArrows(coordinateTracker);
           var replacement = checkCenter(coordinateTracker);
           $("#canvas").find(replacement).show();
           return coordinateTracker
@@ -96,6 +122,7 @@ $( document ).ready(function() {
           var current = checkCenter(coordinateTracker);
           $("#canvas").find(current).hide();
           coordinateTracker[1] -= 1;
+                    checkArrows(coordinateTracker);
           var replacement = checkCenter(coordinateTracker);
           $("#canvas").find(replacement).show();
           return coordinateTracker
