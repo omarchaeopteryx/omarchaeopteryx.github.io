@@ -49,6 +49,7 @@ td {
 .fa {
 
   color: #42f495;
+  text-shadow: 3px 3px 3px lightGrey;
 
 }
 
@@ -117,9 +118,18 @@ img#bottom {
 
   }
 
-  html p, ul {
+  html p {
 
     color: white;
     font-size: 1.1em;
 
   }
+
+  @media only screen
+  and (min-device-width : 375px)
+  and (max-device-width : 667px) {
+
+    #canvas {
+      width: 50%;
+    }
+   }
