@@ -64,11 +64,21 @@ $( document ).ready(function() {
 
     // Use this area to make mobile functionality:
 
-    // //  TO BE DEVELOPED
+    // $("main").on("swipeleft", function() {
+    //   console.log("You swiped to go right!")
+    //   var current = checkCenter(coordinateTracker);
+    //   $("#canvas").find(current).hide();
+    //   coordinateTracker[0] += 1;
+    //   var replacement = checkCenter(coordinateTracker);
+    //   $("#canvas").find(replacement).show();
+    //   return coordinateTracker
+    // });
+
+    // More to come...
 
     // Use this area to make desktop functionality:
 
-      // // Making arrows clickeable (TO BE REFACTORED):
+      // // Making arrows clickeable (to BE REFACTORED):
 
 
       $(".fa.fa-chevron-left").on("click", function(){
@@ -107,18 +117,23 @@ $( document ).ready(function() {
 
       })
 
+      // Alternative way to get to contacts page:
 
-      $(".fa.fa-chevron-down").on("click", function() {
+      $("#link-contact").on("click", function() {
 
         var current = checkCenter(coordinateTracker);
+        window.scrollTo(0, 0);
         $("#canvas").find(current).hide();
-        coordinateTracker[1] -= 1;
+        coordinateTracker[0] += 2;
                   checkArrows(coordinateTracker);
         var replacement = checkCenter(coordinateTracker);
         $("#canvas").find(replacement).fadeIn();
         return coordinateTracker
 
       })
+
+
+      $(".fa.fa-chevron-down").on
 
 
       // // Making the directional keys operational:
