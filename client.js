@@ -1,17 +1,5 @@
 var coordinateTracker = [0,0];
 
-$(document).on('pageinit', function(event){
-   $("main").swiperight(function() {
-     console.log("You swiped to go right!")
-     var current = checkCenter(coordinateTracker);
-     $("#canvas").find(current).hide();
-     coordinateTracker[0] += 1;
-     var replacement = checkCenter(coordinateTracker);
-     $("#canvas").find(replacement).show();
-     return coordinateTracker
-    });
-});
-
 $( document ).ready(function() {
 
     // Setting up website methods:
@@ -32,7 +20,7 @@ $( document ).ready(function() {
       } else if (coordinateTracker[0]=== 0 && coordinateTracker[1]<=0) {
         centerWindow = "#lower-box"
       }
-      console.log("you changed to... " + centerWindow)
+      // console.log("you changed to... " + centerWindow)
       return centerWindow
 
     }
@@ -40,111 +28,95 @@ $( document ).ready(function() {
     function checkArrows(coordinateTracker) {
 
       if (checkCenter(coordinateTracker) === "#center-box") {
-        console.log("You are at center box.")
+        // console.log("You are at center box.")
         $(".fa").show()
       } else if (checkCenter(coordinateTracker) === "#left-box") {
-        console.log("You are in left box.")
+        // console.log("You are in left box.")
         $(".fa").hide()
         $(".fa.fa-chevron-right").show()
       } else if (checkCenter(coordinateTracker) === "#right-box") {
-        console.log("You are in right box.")
+        // console.log("You are in right box.")
         $(".fa").hide()
         $(".fa.fa-chevron-left").show()
       } else if (checkCenter(coordinateTracker) === "#lower-box") {
-        console.log("You are in lower box.")
+        // console.log("You are in lower box.")
         $(".fa").hide()
         $(".fa.fa-chevron-up").show()
       } else if (checkCenter(coordinateTracker) === "#upper-box") {
-        console.log("You are in upper box.")
+        // console.log("You are in upper box.")
         $(".fa").hide()
         $(".fa.fa-chevron-down").show()
       }
     }
 
+    function findCurrent() {
 
-    // Use this area to make mobile functionality:
+      var current = checkCenter(coordinateTracker);
+      $("#canvas").find(current).hide();
+      // console.log(current);
+      return current
 
-    // $("main").on("swipeleft", function() {
-    //   console.log("You swiped to go right!")
-    //   var current = checkCenter(coordinateTracker);
-    //   $("#canvas").find(current).hide();
-    //   coordinateTracker[0] += 1;
-    //   var replacement = checkCenter(coordinateTracker);
-    //   $("#canvas").find(replacement).show();
-    //   return coordinateTracker
-    // });
+    }
 
-    // More to come...
+    function replaceCurrent() {
+
+      window.scrollTo(0, 0);
+      var replacement = checkCenter(coordinateTracker);
+      $("#canvas").find(replacement).fadeIn();
+      return coordinateTracker
+
+    }
 
     // Use this area to make desktop functionality:
 
-      // // Making arrows clickeable (to BE REFACTORED):
+      // // Making arrows clickeable:
 
 
       $(".fa.fa-chevron-left").on("click", function(){
 
-        var current = checkCenter(coordinateTracker);
-        $("#canvas").find(current).hide();
+        findCurrent();
         coordinateTracker[0] -= 1; // Changing the x-coordinate.
-                  checkArrows(coordinateTracker);
-        var replacement = checkCenter(coordinateTracker);
-        $("#canvas").find(replacement).fadeIn();
-        return coordinateTracker
+        checkArrows(coordinateTracker);
+        replaceCurrent();
 
       })
 
       $(".fa.fa-chevron-up").on("click", function() {
 
-            var current = checkCenter(coordinateTracker);
-            $("#canvas").find(current).hide();
-            coordinateTracker[1] += 1; // Changing the y-coordinate.
-                      checkArrows(coordinateTracker);
-            var replacement = checkCenter(coordinateTracker);
-            $("#canvas").find(replacement).fadeIn();
-            return coordinateTracker
+        findCurrent();
+        coordinateTracker[1] += 1; // Changing the y-coordinate.
+        checkArrows(coordinateTracker);
+        replaceCurrent();
 
           })
 
       $(".fa.fa-chevron-right").on("click", function() {
 
-        var current = checkCenter(coordinateTracker);
-        $("#canvas").find(current).hide();
+        findCurrent();
         coordinateTracker[0] += 1;
-                  checkArrows(coordinateTracker);
-        var replacement = checkCenter(coordinateTracker);
-        $("#canvas").find(replacement).fadeIn();
-        return coordinateTracker
-
+        checkArrows(coordinateTracker);
+        replaceCurrent();
       })
 
       $(".fa.fa-chevron-down").on("click", function() {
 
-        var current = checkCenter(coordinateTracker);
-        $("#canvas").find(current).hide();
+        findCurrent();
         coordinateTracker[1] -= 1;
-                  checkArrows(coordinateTracker);
-        var replacement = checkCenter(coordinateTracker);
-        $("#canvas").find(replacement).fadeIn();
-        return coordinateTracker
+        checkArrows(coordinateTracker);
+        replaceCurrent();
 
       })
-
 
       // Alternative way to get to contacts page:
 
       $("#link-contact").on("click", function() {
 
-        var current = checkCenter(coordinateTracker);
-        window.scrollTo(0, 0);
-        $("#canvas").find(current).hide();
+        findCurrent();
         coordinateTracker[0] += 2;
-                  checkArrows(coordinateTracker);
-        var replacement = checkCenter(coordinateTracker);
-        $("#canvas").find(replacement).fadeIn();
-        return coordinateTracker
+        checkArrows(coordinateTracker);
+        replaceCurrent();
 
       })
-
 
       // // Making the directional keys operational:
 
@@ -155,54 +127,51 @@ $( document ).ready(function() {
       switch(e.which) {
 
           case 37: // left
-          console.log("You clicked to go left!")
-          var current = checkCenter(coordinateTracker);
-          $("#canvas").find(current).hide();
+          // console.log("You clicked to go left!")
+          findCurrent();
           coordinateTracker[0] -= 1; // Changing the x-coordinate.
-                    checkArrows(coordinateTracker);
-          var replacement = checkCenter(coordinateTracker);
-          $("#canvas").find(replacement).fadeIn();
-          return coordinateTracker
+          checkArrows(coordinateTracker);
+          replaceCurrent();
           break;
 
           case 38: // up
-          console.log("You clicked to go up!")
-          var current = checkCenter(coordinateTracker);
-          $("#canvas").find(current).hide();
+          // console.log("You clicked to go up!")
+          findCurrent();
           coordinateTracker[1] += 1; // Changing the y-coordinate.
-                    checkArrows(coordinateTracker);
-          var replacement = checkCenter(coordinateTracker);
-          $("#canvas").find(replacement).fadeIn();
-          return coordinateTracker
+          checkArrows(coordinateTracker);
+          replaceCurrent();
           break;
 
           case 39: // right
-          console.log("You clicked to go right!")
-          var current = checkCenter(coordinateTracker);
-          $("#canvas").find(current).hide();
+          // console.log("You clicked to go right!")
+          findCurrent();
           coordinateTracker[0] += 1;
-                    checkArrows(coordinateTracker);
-          var replacement = checkCenter(coordinateTracker);
-          $("#canvas").find(replacement).fadeIn();
-          return coordinateTracker
+          checkArrows(coordinateTracker);
+          replaceCurrent();
           break;
 
           case 40: // down
-          console.log("You clicked to go down!")
-          var current = checkCenter(coordinateTracker);
-          $("#canvas").find(current).hide();
+          // console.log("You clicked to go down!")
+          findCurrent();
           coordinateTracker[1] -= 1;
-                    checkArrows(coordinateTracker);
-          var replacement = checkCenter(coordinateTracker);
-          $("#canvas").find(replacement).fadeIn();
-          return coordinateTracker
+          checkArrows(coordinateTracker);
+          replaceCurrent();
           break;
 
           default: return coordinateTracker; // exit this handler for other keys
 
-
       }
 
+    });
+
+    // FIX - Add mobile functionality:
+
+    $("main").on("swipeleft", function() {
+
+      // console.log("You swiped to go right!")
+      findCurrent();
+      coordinateTracker[0] += 1;
+      replaceCurrent();
 
     });
 
