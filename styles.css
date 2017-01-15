@@ -84,8 +84,9 @@ body, html {
 
 #left-box p {
 
+  font-size: 1em;
   text-align: justify;
-text-justify: inter-word;
+  text-justify: inter-word;
 
 }
 
@@ -98,6 +99,7 @@ text-justify: inter-word;
 #right-box {
 
   height: 50vh;
+
 }
 
 .fa {
@@ -117,7 +119,7 @@ text-justify: inter-word;
 
 .fa.fa-chevron-down {
 
-
+  position: relative;
   display: flex;
   justify-content: center;
   font-size: 5em;
@@ -168,6 +170,27 @@ img#my-self-portrait {
 
 }
 
+img.thumbnail {
+
+  width: 75%;
+
+}
+
+.project {
+
+  font-size: 0.7em;
+  margin-left: 0;
+  /*padding: 10px;
+  text-align: justify;*/
+
+}
+
+#my-projects {
+
+  width: 100%;
+
+}
+
 
 /* Adding media link when shrinking page */
 
@@ -177,6 +200,8 @@ img#my-self-portrait {
 
     background-color: grey;
     width: 95%;
+    margin: 0;
+    padding: 0;
 
   }
 
