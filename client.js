@@ -117,6 +117,19 @@ $( document ).ready(function() {
 
       })
 
+      $(".fa.fa-chevron-down").on("click", function() {
+
+        var current = checkCenter(coordinateTracker);
+        $("#canvas").find(current).hide();
+        coordinateTracker[1] -= 1;
+                  checkArrows(coordinateTracker);
+        var replacement = checkCenter(coordinateTracker);
+        $("#canvas").find(replacement).fadeIn();
+        return coordinateTracker
+
+      })
+
+
       // Alternative way to get to contacts page:
 
       $("#link-contact").on("click", function() {
@@ -131,9 +144,6 @@ $( document ).ready(function() {
         return coordinateTracker
 
       })
-
-
-      $(".fa.fa-chevron-down").on
 
 
       // // Making the directional keys operational:
