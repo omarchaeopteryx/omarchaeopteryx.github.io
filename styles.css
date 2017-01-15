@@ -161,6 +161,13 @@ img#bottom {
 
 }
 
+img#my-self-portrait {
+
+  opacity: 5.0;
+  width: 20vh;
+
+}
+
 
 /* Adding media link when shrinking page */
 
