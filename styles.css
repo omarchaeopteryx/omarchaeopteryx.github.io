@@ -142,6 +142,38 @@ body, html {
 
 }
 
+.my-projects {
+
+  max-width: 620px;
+  height: auto;
+
+}
+
+.a-project {
+
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  height: auto;
+  background: #EEE;
+  z-index: 0;
+  margin: 2px 2px 2px -2px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  transition: all .15s ease-in-out;
+
+}
+
+.a-project:hover {
+
+    background-color: #dbfff0;
+    z-index: 100;
+    height: auto;
+    transform: scale(1.2,1.2);
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.2);
+
+}
+
 img#top {
 
   position: absolute;
@@ -206,7 +238,7 @@ img.thumbnail {
   }
 
   #canvas {
-    width: 50%;
+    width: 100%;
   }
 
   html p {
