@@ -1,7 +1,8 @@
-/*This is a test*/
+
 body {
 
   background: eggShell;
+  height: auto;
 
 }
 
@@ -57,7 +58,7 @@ a:visited {
 }
 
 body, html {
-    height: 100%;
+    height: auto;
 }
 
 .parallax {
@@ -98,7 +99,8 @@ body, html {
 
 #right-box {
 
-  height: 50vh;
+  font-size: 1.4em;
+  height: auto;
 
 }
 
@@ -176,22 +178,25 @@ body, html {
 
 img#top {
 
-  position: absolute;
+  position: fixed;
   z-index: -1;
   opacity: 0.3;
   left: 0%;
   top: 0%;
-
+  width: auto;
+  height: auto;
 
 }
 
 img#bottom {
 
-  position: absolute;
+  position: fixed;
   z-index: -2;
   opacity: 0.3;
   left: 0%;
   top: 70%;
+  width: auto;
+  height: auto;
 
 }
 
