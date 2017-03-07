@@ -3,6 +3,12 @@ body {
 
   background: eggShell;
   height: auto;
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+      ),
+   url("https://lh3.googleusercontent.com/p659ecAsZtK2ep8CoUESyVCIBZsLK9ghqUNnnaorcgX6QS51p1VqpoMBDzH6t_6-4O5YeRn5mbIEY6GCDbGluuLC1lW7ks22p9hoxX4Sn-KrlNnL4cG-vvH1oEdeuEKnhMOC_CkewUpH5Jxh2ow4o-yIjtB3tZxlgDx8Z_XqAYsV3RF4h-0z7kSUVimoqkV81k4zGo-7v25An3e2-eoJqwsJEjuyME13OYpYcwWYcaTL1P2whkGBQfpr1yhs5aB-hIYsIFQilpfkWOdznGmX9N1LoajupfGtVbjQ9smHwcGpHevNQ361Uqay9d5xj_2wt27Cm3IpadAAMH6C1_w18nyr1ttXE7JtGt_gPYae_-PfTL2A-olQQ5VIyBWf1lluscUhhBwRwtMQSriMLSP3VWNoSu9ZuywT5rqgdLV0dZ9qSkJU4QBvKxUKsa9SiXLsGjZ3GCKWTIgt8J4O_eCfjC1w4mAHCGcPJoEQpGtRb9fMl37uGl_wnjD65LDeqkTGdt6UfFbS1YJ5miq071gXo9IhMFZyjyQFMn4XFS0IlblC8ppgl75w6AQIxL67M0lbF61K6D_KXIW0uJnfaL168OYjR8-2uYPZip8sB2biKl7ag7Dr=w1179-h785-no");
 
 }
 
