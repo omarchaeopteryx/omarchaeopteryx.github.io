@@ -36,7 +36,7 @@ td {
   padding-right: 5vh;
   padding-left: 5vh;
   font-size: 1.3em;
-  font-family: monospace;
+  font-family: Georgia;
 
 }
 
@@ -99,8 +99,8 @@ body, html {
 
 .story-text {
 
-  margin: 10%;
-  padding: 10%;
+  margin-bottom: 10%;
+  padding: 5%;
   background-color: lightBlue;
   opacity: 1;
 
