@@ -97,6 +97,15 @@ body, html {
 
 }
 
+.story-text {
+
+  margin: 10%;
+  padding: 10%;
+  background-color: lightBlue;
+  opacity: 1;
+
+}
+
 #lower-box p {
 
   text-align: left;
