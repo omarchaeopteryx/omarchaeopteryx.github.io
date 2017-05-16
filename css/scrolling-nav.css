@@ -103,6 +103,12 @@ RATP green (dark): #008672
 
 }
 
+#intro-button {
+  margin-left: 45%;
+  font-size: 2em;
+  color: #85D141;
+}
+
 .about-section {
   height: 100%;
   padding-top: 10%;
@@ -191,12 +197,16 @@ section .container {
 
 #links {
     height: 100%;
+    margin-top: 0;
+    padding-top: 2%;
     text-align: center;
     background: #00AA90;
 }
 
+
 #links i {
   color: #1D3667;
+  font-size: 6em;
 }
 
 #links ul {
@@ -205,6 +215,7 @@ section .container {
 }
 
 #links li {
+  font-size: 1em;
   padding-bottom: 2%;
 }
 
@@ -229,4 +240,8 @@ section .container {
     background-image: url('https://scontent.fsan1-1.fna.fbcdn.net/v/t1.0-9/17523331_10106501976324133_3620732812363107178_n.jpg?oh=cb453fa709af63abc6c435e002c2c859&oe=597D63D9');*/
     background-repeat: no-repeat;
     background-position: center;
+}
+
+#contact i {
+  font-size: 6em;
 }
