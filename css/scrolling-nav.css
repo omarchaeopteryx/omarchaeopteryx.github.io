@@ -1,0 +1,205 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children
+of those sections to manage the look and feel of the site. */
+
+/* My Personal Color Palatte
+
+Twitter blue: #1da1f2
+RATP green: #00AA90
+RATP green (dark): #008672
+
+*/
+
+/* General stylings */
+
+.navbar {
+  background-color: #00AA90;
+}
+
+.centrepiece {
+  max-height: 50vh;
+}
+
+.col-lg-12 {
+  z-index: 2;
+  opacity: 1.0;
+}
+
+.btn.btn-default.page-scroll {
+  color: #1da1f2;
+  position: relative;
+  /*padding-top: 70%;*/
+}
+
+
+/* Thematic Stylings */
+
+.highlight {
+  background-color: #FFCF00;
+}
+
+.material-icons {
+  font-size: 12em;
+  padding-bottom: 5%;
+}
+
+/* Section-by-Section Stylings */
+
+.intro-section {
+    height: 100%;
+    padding-top: 150px;
+    padding: 10%;
+    text-align: center;
+    background-image: url('https://s3-us-west-2.amazonaws.com/omar-one/export.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*opacity: 0.6;*/
+    z-index: 1;
+}
+
+
+.container-intro {
+  font-family: sans-serif;
+  text-align: left;
+  color: #1da1f2;
+  opacity: 1.0;
+  /*background: linear-gradient(135deg, white, grey);*/
+  z-index: 5;
+}
+
+.container-intro h1, h2 {
+  font-size: 5em;
+  background: linear-gradient(135deg, white, lightGrey);
+
+}
+
+.about-section {
+  height: 100%;
+  padding-top: 10%;
+  text-align: center;
+  color: #008672;
+
+  overflow: hidden;
+  z-index: 1;
+  background: black;
+  background-image: url('https://docs.google.com/drawings/d/1iV-XN4FFhIsHekI8WiXHrnRvpnNPY0ilZDkdOIbe89s/pub?w=1387&h=962');
+  background-position: center;
+  opacity: 1;
+}
+
+.about-section p {
+  font-size: 4em;
+  display: block;
+}
+
+.story-section {
+    height: 100%;
+    padding-top: 10%;
+    text-align: center;
+    z-index: 2;
+    background: #fff;
+}
+
+section .container {
+  background-color: rgba(255,255,255,0.9);
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+#story-nations {
+  background-color: white;
+  background: url('https://s3-us-west-2.amazonaws.com/omar-one/E_2016_SDG_Poster_all_sizes_without_UN_emblem_Letter.png');
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  color: #FFD06C;
+}
+
+#story-colab {
+    color: #85D141;
+    background: white;
+    /*background-image: url('https://s3-us-west-2.amazonaws.com/omar-one/ScreenShot_CliO');*/
+    background-image: url('https://s3-us-west-2.amazonaws.com/omar-one/Screen+Shot+2016-08-01+at+2.10.55+PM.png');
+    background-position: top center;
+    background-size: cover;
+}
+
+.container-colab {
+  background-color: rgba(255,255,255,0.9);
+  /*background-image: url('https://s3-us-west-2.amazonaws.com/omar-one/ScreenShot_CliO');*/
+  /*padding-top: 1%;;
+  padding-bottom: 10%;
+  margin-right: 10%;
+  margin-left: 10%;*/
+}
+
+#story-indicators {
+  background-image: url('https://docs.google.com/drawings/d/1mN14DIkmTFwME6PMIR7waJxITtyPEc_j39589RS3r90/pub?w=1368&h=1343');
+  background-position: center;
+  background-size: cover;
+  color: #FFCF00;
+}
+
+.container-indicators {
+  background-color: rgba(255,255,255,0.9);
+  /*background: linear-gradient(135deg, white, lightGrey);*/
+  /*margin-top: 0%;
+  padding-top: 1%;
+  padding-bottom: 10%;
+  margin-right: 10%;
+  margin-left: 10%;*/
+}
+
+#story-webapps {
+  background-image: url('https://docs.google.com/drawings/d/1k37M8xb66_Qb1Kn2oFhVVcjWEK8Ndy7TDVNRb5G61EI/pub?w=1394&h=713');
+  background-position: center;
+  background-size: cover;
+  color: #33afd6;
+}
+
+#links {
+    height: 100%;
+    text-align: center;
+    background: #00AA90;
+}
+
+#contact {
+    height: 100%;
+    text-align: center;
+    color: #1D3667;
+    background-image: url('https://scontent.fsan1-1.fna.fbcdn.net/v/t1.0-9/17523331_10106501976324133_3620732812363107178_n.jpg?oh=cb453fa709af63abc6c435e002c2c859&oe=597D63D9');*/
+    background-repeat: no-repeat;
+    background-position: center;
+}

@@ -1,0 +1,36 @@
+.header {
+  float: top;
+  display: flex;
+  justify-content: space-between;;
+  background-color: lightGrey;
+  font-family: sans-serif;
+  padding-right: 10%;
+  padding-left: 10%;
+
+}
+
+.header a {
+  color: grey;
+  style: none;
+  text-decoration: none;
+}
+
+.header-item {
+  font-size: 2em;
+  color: blue;
+
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("https://www.themoviedb.org/assets/9b3f9c24d9fd5f297ae433eb33d93514/images/v4/logos/408x161-powered-by-rectangle-green.png");
+
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

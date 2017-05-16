@@ -1,131 +1,268 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
+
 <head>
-	<title>Omar Malik</title>
-	<link rel="icon" href="favicon.ico" type="image/x-icon" />
-	<link rel="stylesheet" href="styles.css" type="text/css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://use.fontawesome.com/fe9a36a02a.js"></script>
-	<script src="client.js"></script>
-	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <title>Omar's Website</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-<body>
-	<main>
-		<!-- <img id="bottom" src="github-mypage-1.svg" alt="A river as a background image">
-		<img id="top" src="github-mypage-2.svg" alt="A leaf as a background image"> -->
-		<table>
-			<th></th>
-			<th></th>
-			<th></th>
-		<tr>
-			<td></td>
-			<td class="icon"><i class="fa fa-chevron-up"></i></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td class="icon"><i class="fa fa-chevron-left"></i></td>
-			<td>
-				<div id="canvas">
-					<div id="center-box">
-						<p>I'm Omar. Welcome!</p>
-						<p><img id="my-self-portrait" src="https://docs.google.com/drawings/d/1wDNIK2XjjjZTPUv543Sc5aR7anPf4h_xkaHAnhfBoj8/pub?w=628&h=598"></p>
-					</div>
-					<div id="right-box">
-						<h2>Connect</h2>
-						<p>E-mail:<a href="mailto:omar.a.malik@icloud.com"> omar.a.malik@icloud.com</a></p>
-						<p>Github: <a href="https://github.com/omarchaeopteryx">@omarchaeopteryx</a></p>
-						<p>Twitter: <a href="https://twitter.com/sherlock_omz">@sherlock_omz</a></i></p>
-						<p>LinkedIn: <a href="https://linkedin.com/in/omarmalikprofile"> profile</a></p>
-					</div>
-					<div id="left-box">
-						<h1 class='page-title'>My Story</h1>
-						<p class='story-text'>I'm a socially conscious Web developer.</p>
-						<p class='story-text'>With a background science communication, I <b>bring a critical and creative eye to solving problems.</b>.</p>
-						<p class='story-text'>I unwittingly got my start in doing eco-friendly Web development when integrating YouTube videos into UC Berkeley's amphibian conservation database, <a href="http://amphibiaweb.org/cgi/amphib_query?where-genus=Oreophrynella&where-species=nigra">AmphibiaWeb.org.</a> I have since become heavily involved in research on <a href="http://epi.yale.edu/chapter/water-resources">water quality</a>.
-						<div class="parallax"><img id="my-water-map" src="https://docs.google.com/drawings/d/1Znml7RDgZzwuXGuyjOsk2tjccn6lalv0eeIO9UehMZ4/pub?w=952&amp;h=496"></div>
-						<br>
 
-						<p class = 'story-text'><b>I believe that software, like science, relies on peer sharing networks</b> and makes the most out of the ability to <b>try new things and learn from mistakes</b>. Good ideas are open-source.</p>
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
-						<h3 class='story-text'>Why me?</h3>
-						<p class = 'story-text'>I'm specially equipped to <b>help you think critically about problems and make big impacts on consumers and society.</b></p>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-						<p class='story-text'>I work in full-stack Web development. Using object-oriented programming best practices with Ruby, JavaScipt, APIs, and styling, I can help you create communications platforms that fit your needs.
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Omar A. Malik</a>
+            </div>
 
-						<h3 class='story-text'>What now?</h3>
-						<p class='story-text'>Let's collaborate and find solutions!</p>
-						<h4 class='story-text'><a id="link-contact" href="#get-in-touch">Contact</a></h4>
-					</div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#story-nations">Stories</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#links">Links</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
-					<div id="upper-box">
-						<h1>Websites</h1>
-						<ul id="my-projects">
-							<li class="a-project"><img class="thumbnail" src="https://docs.google.com/drawings/d/1lrZ7vGGXalN2at4IQEOSvC8hkwWq8ulvsOUnQjbNcQs/pub?w=398&h=392"><div><a href="https://dowhop-webchat.firebaseapp.com/"><h4><strong>DoWhop WebChat</strong></h4></a><div class="paragraphs">A real-time multi-channel chat application for a person-to-person sharing economy website (DoWhop.com). Tech is Firebase SDK (NoSQL), Google Maps API, HTML/CSS, JavaScript, jQuery</div><br>Role: Web Development Intern (full stack)</div></li>
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+        <div class="container-intro">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Web developer +</h1>
+                    <h1>Science communicator</h1>
+                    <a class="btn btn-default page-scroll" href="#about">Click to Continue</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-							<li class="a-project"><img class="thumbnail" src="https://employ-production.s3.amazonaws.com/uploads%2F1483725121282%2Fgoatogether-new-screenshot1.png"><div><a href="https://goatogether.herokuapp.com"><h4><strong>Goatogether App </strong></h4></a><div class="paragraphs">A Web app that lets users explore their local area and invite friends to go on journeys. Uses Twitter, Google Maps APIs to locate and pin social media posts to maps using dynamic search and data sorting methods.</div><br>Role: Full-Stack Developer</div></li>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                      <h1 class="highlight">What do science and software have in common?</h1>
+                      <p>
+                        <span class="highlight"> Peer collaboration</span>
+                        <span class="highlight"> Knowledge-sharing </span>
+                        <span class="highlight"> Creative problem-solving </span>
+                        <br>
+                        <span class="highlight"> And more...</span>
+                      </p>
+                </div>
+            </div>
+            <a class="btn btn-default page-scroll" href="#story-nations">Click to Continue</a>
+        </div>
+    </section>
 
+    <!-- Story: United Nations -->
+    <section id="story-nations" class="story-section">
+        <div class="container">
+            <div class="row">
+                <div id="story-UN-main" class="col-lg-12">
+                    <h1>Supporting communications at the UN</h1>
+                    <p>
+                      <i class="material-icons">wb_incandescent</i>
+                    </p>
+                    <!-- <img src="https://s3-us-west-2.amazonaws.com/omar-one/ScreenShot_CliO"> -->
+                    <div class="row">
+                      <p>Assisted the United Nations with clean-water and oceans outreach efforts. <a href="https://www.clintonfoundation.org/clinton-global-initiative/commitments/sustainable-oceans-alliance-impacting-sgds" target="_blank">Read more.</a></p>
+                      <div hidden id="story-1-hidden">
+                        Story info will go here.
+                      </div>
+                    <div class="row">
+                    <a class="btn btn-default page-scroll" href="#story-colab">Click to Continue</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-							<li class="a-project"><div class="my-square"><img class="thumbnail" src="https://employ-production.s3.amazonaws.com/uploads%2F1483725527107%2Fgithub_critiquehub_screenshot_1.png"><div><a href="https://critiquehub.herokuapp.com"><h4><strong>CritiqueHub</strong></h4></a><div class="paragraphs">A site that allows fans and privileged users to review the latest movies and leave comments. The team constructed, tested and deployed the project in three days. Uses Ruby-on-Rails and Open Movie Database API back-end with JavaScript + HTML/CSS Bootstrap front-end.</p> </div></div><br>Role: Front-End Developer</li>
+    <!-- Story: MIT Climate CoLab -->
+    <section id="story-colab" class="story-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Using Science + Tech for Good</h1>
+                    <p>
+                      <i class="material-icons">developer_mode</i>
+                    </p>
+                    <!-- <p>
+                       <img class="centrepiece" src="https://s3-us-west-2.amazonaws.com/omar-one/ScreenShot_CliO">
+                    </p> -->
+                    <p>Shaped ideas that won the People's Choice award at MIT Climate CoLab.
+                      <a href="https://www.climatecolab.org/contests/2012/shifting-cultures-for-a-changing-climate/c/proposal/1304121" target="_blank"> Read more.
+                    <!-- <img src="https://docs.google.com/drawings/d/1WjB_T7rMqDSx1BWgfjJwIQmojOX6vvsBPpdREdtQt4c/pub?w=1393&h=784"> -->
+                    </p>
+                    <a class="btn btn-default page-scroll" href="#story-indicators">Scroll Down!</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-							<li class="a-project"><img class="thumbnail" src="https://docs.google.com/drawings/d/16N5Tf9aX_6lKlUrWoMiNk1Cu4-PtaFPDigWqBbA9xz4/pub?w=531&amp;h=531"><div><a href="https://frozen-depths-21192.herokuapp.com/"><h4><strong>My Energy Mapper</strong></h4></a><div class="paragraphs">Which US state consumes the most total energy? An interactive data explorer lets users interact with US energy data parsed from JSON using jQuery, d3.js in a Rails environment.</div><br>Role: Full-Stack Developer</div></li>
+    <!-- story Indicators Section -->
+    <section id="story-indicators" class="story-section">
+        <div class="container">
+          <!-- <video autoplay loop id="video-background" muted>
+         <source src="https://vimeo.com/163324221" type="video/mp4"> -->
+         <!-- </video> -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Supporting Federal science</h1>
+                    <p>
+                      <i class="material-icons">create</i>
+                    </p>
+                    <p>Wrote and coordinated content production for the web.
+                      <a href="http://globalchange.gov/explore/indicators" target="_blank"> Read more.</a>
+                      <!-- <img src="https://docs.google.com/drawings/d/1k4quDLV16xU2ozM2HdMOhzWLdthrzvzikwFmBQdklkw/pub?w=400&h=200"> -->
+                    </p>
 
-							<li class="a-project"><img class="thumbnail" src="https://docs.google.com/drawings/d/1XigH5uqGu8RKXpnfc3jedocpLjfBzHNVXLdaoL7rtyQ/pub?w=531&amp;h=531"><div><a href="http://palauun.org"><h4><strong>PalauUN.org</strong></h4></a><div class="paragraphs">A web presence for the Mission of Palau to the United Nations. I managed and populated content, integrating timely multimedia such as PDFs and videos. Launched in WordPess CMS back-end with HTML/CSS customization.</div><br>Role: Webmaster</div></li></li>
+                    <a class="btn btn-default page-scroll" href="#story-webapps">Scroll Down!</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-							<li class="a-project"><img class="thumbnail" src="https://docs.google.com/drawings/d/1J1q_M_geXKnTCIGomajJrsTQTs3-55k4x4gVvkuls0Y/pub?w=531&amp;h=531"><div><a href="http://encircl.net"><h4><strong>Encircl.net</strong></h4></a><div class="paragraphs">An environmental storytelling website bringing scientists and artists together. Led team of 18+ volunteers in prototyping, launching with CMS, and crafting multimedia content. </div><br>Role: Co-Founder</div></li>
-							</ul>
-					</div>
+   <!-- story Section -->
+   <section id="story-webapps" class="story-section">
+       <div class="container">
+           <div class="row">
+               <div class="col-lg-12">
+                   <h1>Developing Web Apps</h1>
+                   <p>
+                     <i class="material-icons">build</i>
+                   </p>
+                   <p>Using creativity and problem-solving to custom build websites and applications.
+                     <a href="https://github.com/omarchaeopteryx" target="_blank"> See more.</a>
+                     <!-- <img src="https://docs.google.com/drawings/d/1lrZ7vGGXalN2at4IQEOSvC8hkwWq8ulvsOUnQjbNcQs/pub?w=350&h=340"> -->
+                   </p>
 
-					<div id="lower-box">
-						<h1>Research</h1>
+                   <a class="btn btn-default page-scroll" href="#links">Scroll Down!</a>
+               </div>
+           </div>
+       </div>
+   </section>
 
-							<li class="a-project"><img class="thumbnail" src="https://docs.google.com/drawings/d/1Znml7RDgZzwuXGuyjOsk2tjccn6lalv0eeIO9UehMZ4/pub?w=952&amp;h=496"><div><a href="http://visuals.datadriven.yale.edu/waste_map/"><h4><strong>Wastewater Index</strong></h4></a><div class="paragraphs">A first-of-its-kind measurement of water pollution from wastewater treatment around the world. Uses empirical findings from original data sources and inter-governmental data to present metrics for 180+ countries.</div><br>Role: Research Team Lead</div></li>
+   <!-- Links Section -->
+   <section id="links" class="story-section">
+       <div class="container">
+           <div class="row">
+               <div class="col-lg-12">
+                   <h1>Links</h1>
+                   <p>
+                     <i class="material-icons">share</i>
+                   </p>
+                   <p>
+                     <!-- <ul id="my-projects">
+         							<li class="a-project"><img class="thumbnail" src="https://docs.google.com/drawings/d/1lrZ7vGGXalN2at4IQEOSvC8hkwWq8ulvsOUnQjbNcQs/pub?w=398&h=392"><div><a href="https://dowhop-webchat.firebaseapp.com/"><h4><strong>DoWhop WebChat</strong></h4></a><div class="paragraphs">A real-time multi-channel chat application for a person-to-person sharing economy website (DoWhop.com). Tech is Firebase SDK (NoSQL), Google Maps API, HTML/CSS, JavaScript, jQuery</div><br>Role: Web Development Intern (full stack)</div></li>
 
-							<li class="a-project"><img class="thumbnail" src="https://docs.google.com/drawings/d/11wvsnRv5hjB25ejJhyR4yDyTGCE3MkvXx1KDwjHv__c/pub?w=531&amp;h=531"><div><a href="http://epi.yale.edu"><h4><strong>Environmental Performance Index</strong></h4></a><div class="paragraphs">The EPI provides a global scorecard of the environment with country-by-country metrics to inform decision-making. A Web portal allows users to explore the data.</div><br>Role: Researcher</div></li>
+         							<li class="a-project"><img class="thumbnail" src="https://employ-production.s3.amazonaws.com/uploads%2F1483725121282%2Fgoatogether-new-screenshot1.png"><div><a href="https://goatogether.herokuapp.com"><h4><strong>Goatogether App </strong></h4></a><div class="paragraphs">A Web app that lets users explore their local area and invite friends to go on journeys. Uses Twitter, Google Maps APIs to locate and pin social media posts to maps using dynamic search and data sorting methods.</div><br>Role: Full-Stack Developer</div></li>
 
-							<li class="a-project"><img class="thumbnail" src="https://docs.google.com/drawings/d/1MCfXlFRKErYpBudlIip58GK0z2WvHdnSai2b0aNGYio/pub?w=531&amp;h=531"><div><a href="http://www.globalchange.gov/browse/indicators"><h4><strong>US Climate Indicators</strong></h4></a><div class="paragraphs">What indicators of climate change could be useful for decision-making? Helped guide launch of this online portal for science communication.</div><br>Role: Researcher </div></li>
+         							<li class="a-project"><div class="my-square"><img class="thumbnail" src="https://employ-production.s3.amazonaws.com/uploads%2F1483725527107%2Fgithub_critiquehub_screenshot_1.png"><div><a href="https://critiquehub.herokuapp.com"><h4><strong>CritiqueHub</strong></h4></a><div class="paragraphs">A site that allows fans and privileged users to review the latest movies and leave comments. The team constructed, tested and deployed the project in three days. Uses Ruby-on-Rails and Open Movie Database API back-end with JavaScript + HTML/CSS Bootstrap front-end.</p> </div></div><br>Role: Front-End Developer</li>
 
-							<li class="a-project"><img class="thumbnail" src="https://docs.google.com/drawings/d/1GTr15qNU_lk9qTclKHFy0NiShBm-RbujVl2TymhS-ek/pub?w=600&amp;h=531"><div><a href="http://supply-change.org/"><h4><strong>Supply Change.org</strong></h4></a><div class="paragraphs">The world's first open data aggregation platform that tracks corporate commitments to eliminating deforestation. Researched international supply chains to find global sustainability metrics.</div><br>Role: Consultant </div></li>
+         							<li class="a-project"><img class="thumbnail" src="https://docs.google.com/drawings/d/16N5Tf9aX_6lKlUrWoMiNk1Cu4-PtaFPDigWqBbA9xz4/pub?w=531&amp;h=531"><div><a href="https://frozen-depths-21192.herokuapp.com/"><h4><strong>My Energy Mapper</strong></h4></a><div class="paragraphs">Which US state consumes the most total energy? An interactive data explorer lets users interact with US energy data parsed from JSON using jQuery, d3.js in a Rails environment.</div><br>Role: Full-Stack Developer</div></li>
 
-							<li class="a-project"><img class="thumbnail" src="https://docs.google.com/drawings/d/1uqfZBWWKaS4h0OVKjCsHlJ1i4rLcRXald-V9LpJaMIQ/pub?w=927&amp;h=649"><div><a href="http://www.guerrillacartography.org"><h4><strong>Water: An Atlas</strong></h4></a><div class="paragraphs">What have science fiction authors proposed to battle California's drought? Identified relevant ideas and worked with cartographer to produce prototype for a novel map.</div><br>Role: Volunteer </div></li>
+         							<li class="a-project"><img class="thumbnail" src="https://docs.google.com/drawings/d/1XigH5uqGu8RKXpnfc3jedocpLjfBzHNVXLdaoL7rtyQ/pub?w=531&amp;h=531"><div><a href="http://palauun.org"><h4><strong>PalauUN.org</strong></h4></a><div class="paragraphs">A web presence for the Mission of Palau to the United Nations. I managed and populated content, integrating timely multimedia such as PDFs and videos. Launched in WordPess CMS back-end with HTML/CSS customization.</div><br>Role: Webmaster</div></li></li>
 
+         							<li class="a-project"><img class="thumbnail" src="https://docs.google.com/drawings/d/1J1q_M_geXKnTCIGomajJrsTQTs3-55k4x4gVvkuls0Y/pub?w=531&amp;h=531"><div><a href="http://encircl.net"><h4><strong>Encircl.net</strong></h4></a><div class="paragraphs">An environmental storytelling website bringing scientists and artists together. Led team of 18+ volunteers in prototyping, launching with CMS, and crafting multimedia content. </div><br>Role: Co-Founder</div></li>
+         							</ul> -->
 
-						<!-- <h2>Videos</h2>
+                      <!-- <h1>Research</h1> -->
 
-						<iframe src="https://player.vimeo.com/video/146032819" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-						<p><a href="https://vimeo.com/146032819">The Climate Organism (CliO): Shifting cultures for a changing climate</a> from <a href="https://vimeo.com/omalik">Omar Malik</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+                      <!-- <li class="a-project"><img class="thumbnail" src="https://docs.google.com/drawings/d/1Znml7RDgZzwuXGuyjOsk2tjccn6lalv0eeIO9UehMZ4/pub?w=952&amp;h=496"><div><a href="http://visuals.datadriven.yale.edu/waste_map/"><h4><strong>Wastewater Index</strong></h4></a><div class="paragraphs">A first-of-its-kind measurement of water pollution from wastewater treatment around the world. Uses empirical findings from original data sources and inter-governmental data to present metrics for 180+ countries.</div><br>Role: Research Team Lead</div></li>
 
-						<iframe src="https://player.vimeo.com/video/183628186" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-						<p><a href="https://vimeo.com/183628186">UpRouted Promo</a> from <a href="https://vimeo.com/omalik">Omar Malik</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+                      <li class="a-project"><img class="thumbnail" src="https://docs.google.com/drawings/d/11wvsnRv5hjB25ejJhyR4yDyTGCE3MkvXx1KDwjHv__c/pub?w=531&amp;h=531"><div><a href="http://epi.yale.edu"><h4><strong>Environmental Performance Index</strong></h4></a><div class="paragraphs">The EPI provides a global scorecard of the environment with country-by-country metrics to inform decision-making. A Web portal allows users to explore the data.</div><br>Role: Researcher</div></li>
 
-						<iframe src="https://player.vimeo.com/video/152379070" width="640" height="469" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-						<p><a href="https://vimeo.com/152379070">The Frontlines of Fracking (2012)</a></p> -->
+                      <li class="a-project"><img class="thumbnail" src="https://docs.google.com/drawings/d/1MCfXlFRKErYpBudlIip58GK0z2WvHdnSai2b0aNGYio/pub?w=531&amp;h=531"><div><a href="http://www.globalchange.gov/browse/indicators"><h4><strong>US Climate Indicators</strong></h4></a><div class="paragraphs">What indicators of climate change could be useful for decision-making? Helped guide launch of this online portal for science communication.</div><br>Role: Researcher </div></li>
 
-						<!--Add in future date >
-						<h2>Writing</h2>
+                      <li class="a-project"><img class="thumbnail" src="https://docs.google.com/drawings/d/1GTr15qNU_lk9qTclKHFy0NiShBm-RbujVl2TymhS-ek/pub?w=600&amp;h=531"><div><a href="http://supply-change.org/"><h4><strong>Supply Change.org</strong></h4></a><div class="paragraphs">The world's first open data aggregation platform that tracks corporate commitments to eliminating deforestation. Researched international supply chains to find global sustainability metrics.</div><br>Role: Consultant </div></li>
 
-						<p>A historical perspective on fecal sludge reuse. <i>Broken Toilets</i>. 2016. <a href='http://brokentoilets.org/blog/good-waste-historical-perspective-fecal-sludge-reuse/'>http://brokentoilets.org/blog/good-waste-historical-perspective-fecal-sludge-reuse/</a></p>
+                      <li class="a-project"><img class="thumbnail" src="https://docs.google.com/drawings/d/1uqfZBWWKaS4h0OVKjCsHlJ1i4rLcRXald-V9LpJaMIQ/pub?w=927&amp;h=649"><div><a href="http://www.guerrillacartography.org"><h4><strong>Water: An Atlas</strong></h4></a><div class="paragraphs">What have science fiction authors proposed to battle California's drought? Identified relevant ideas and worked with cartographer to produce prototype for a novel map.</div><br>Role: Volunteer </div></li> -->
 
-						<p>Is Fisheries Policy Nimble Enough? <i>Hakai Magazine</i>. 2015. <a href="https://www.hakaimagazine.com/article-short/fisheries-policy-nimble-enough">https://www.hakaimagazine.com/article-short/fisheries-policy-nimble-enough</a>
+                   </p>
+                   <a class="btn btn-default page-scroll" href="#contact">Scroll Down!</a>
+               </div>
+           </div>
+       </div>
+   </section>
 
-						<p>A global indicator of wastewater treatment to inform the Sustainable Development Goals (SDGs). <i>Environmental Science & Policy</i>. 48 (2015): 172-185. <a href="        http://dx.doi.org/10.1016/j.envsci.2015.01.005">doi: 10.1016/j.envsci.2015.01.005</a>
-						</p>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Contact</h1>
+                    <p>
+                      <i class="material-icons">mail</i>
+                    </p>
+                    <p><a href="mailto:omar.a.malik@icloud.com"> omar.a.malik@icloud.com</a></p>
+                    <p><a href="https://twitter.com/sherlock_omz" target="_blank">Twitter</a></p>
+                    <p><a href="https://github.com/omaerchaeopteryx" target="_blank">GitHub</a></p>
+                    <p><a href="https://linkedin.com/in/omarmalikprofile" target="_blank">LinkedIn</a></p>
+                    <p><a href="https://docs.google.com/document/d/1xE8EFCLc5q1lbcNkFdxUYoq976slrp6hR_HQZIMVxoY/pub" target="_blank">Resume</a></p>
+                    <a class="btn btn-default page-scroll" href="#intro" target="_blank">Click to Return!</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-						<p>Where Is the Wastewater Going? How better data can make us more resilient. Union of Concerned Scientists blog. 2014. <a href="http://blog.ucsusa.org/where-is-the-wastewater-going-how-better-data-can-make-us-more-resilient-643">http://blog.ucsusa.org/where-is-the-wastewater-going-how-better-data-can-make-us-more-resilient-643</a>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-						<p>Mobilize citizens to track sustianability. <i>Nature</i>. 2014. <a href="http://www.nature.com/news/development-mobilize-citizens-to-track-sustainability-1.14951">http://www.nature.com/news/development-mobilize-citizens-to-track-sustainability-1.14951</a>
-<!--->
-						<br>
-					</div>
-				</div>
-			</td>
-			<td class="icon"><i class="fa fa-chevron-right"></i></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td class="icon"><i class="fa fa-chevron-down"></i></td>
-			<td></td>
-		</tr>
-	</table>
-</main>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
 </body>
+
 </html>

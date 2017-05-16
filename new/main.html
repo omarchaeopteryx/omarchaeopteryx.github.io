@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>About Omar Malik</title>
+    <link rel="stylesheet" type="text/css" href="theme.css">
+
+    <link rel="stylesheet" type="text/css" href="onepage-scroll.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script src="onepagescroll.js"></script>
+  </head>
+  <body class="loading">
+    <div class="header">
+      <a class="header-item" href="#">About</a>
+      <a class="header-item" href="#">Links</a>
+      <a class="header-item" href="#contact">Contact</a>
+    </div>
+    <div class="main">
+
+      <section>
+        <h2>Welcome to Omar's Website</h2>
+      </section>
+      <section>
+        <h2>What do you science and software have in common?</h2>
+        <p>They both rely on problem-solving and sharing information</p>
+      </section>
+      <section>
+        <h3>Once upon a time....</h3>
+        <div class="parallax"></div>
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+        <p>Third paragraph</p>
+      <section name="contact">
+        <h4>here's some contact info.</h4>
+      </section>
+  </body>
+  <script>
+  onePageScroll(".main", {
+   sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
+   easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
+                                    // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
+   animationTime: 1000,             // AnimationTime let you define how long each section takes to animate
+   pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
+   updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+   beforeMove: function(index) {},  // This option accepts a callback function. The function will be called before the page moves.
+   afterMove: function(index) {},   // This option accepts a callback function. The function will be called after the page moves.
+   loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
+   keyboard: true,                  // You can activate the keyboard controls
+   responsiveFallback: false        // You can fallback to normal page scroll by defining the width of the browser in which
+                                    // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
+                                    // the browser's width is less than 600, the fallback will kick in.
+}); </script>
+</html>
+
+<body>
