@@ -76,7 +76,7 @@ RATP green (dark): #008672
 
 .intro-section {
     height: 100%;
-    padding-top: 150px;
+    /*padding-top: 150px;*/
     padding: 10%;
     text-align: center;
     background-image: url('https://s3-us-west-2.amazonaws.com/omar-one/export.jpg');
@@ -98,23 +98,22 @@ RATP green (dark): #008672
 }
 
 .container-intro h1, h2 {
-  font-size: 5em;
-  background: linear-gradient(135deg, white, lightGrey);
-
+  font-size: 4em;
+  background: linear-gradient(135deg, white, #33afd6);
 }
 
 #intro-button {
-  margin-left: 45%;
+  /*margin-left: 40%;*/
   font-size: 2em;
-  color: #85D141;
+  color: black;
 }
 
 .about-section {
   height: 100%;
-  padding-top: 10%;
+  /*padding-top: 10%;
+  padding-bottom: 5%;*/
   text-align: center;
   color: #008672;
-
   overflow: hidden;
   z-index: 1;
   background: black;
@@ -124,29 +123,28 @@ RATP green (dark): #008672
 }
 
 .about-section p {
-  font-size: 4em;
+  font-size: 3em;
   display: block;
 }
 
 .story-section {
-    height: 100%;
-    padding-top: 10%;
-    text-align: center;
-    z-index: 2;
-    background: #fff;
+  height: 100%;
+  /*padding-top: 10%;*/
+  text-align: center;
+  z-index: 2;
+  background: #fff;
 }
 
 section .container {
-  background-color: rgba(255,255,255,0.9);
-  padding-top: 10%;
-  padding-bottom: 10%;
-  padding-right: 5%;
-  padding-left: 5%;
+  background-color: rgba(238, 244, 245, 0.9);
+  padding-top: 5%;
+  margin-top: 5%;
+  padding-bottom: 5%;
 }
 
 #story-nations {
   background-color: white;
-  background: url('https://s3-us-west-2.amazonaws.com/omar-one/E_2016_SDG_Poster_all_sizes_without_UN_emblem_Letter.png');
+  background: url('https://docs.google.com/drawings/d/1N4oPIKKGVoYTtj2iFQjRCqAry9VMTdibXu3Zy7D2M90/pub?w=1398&h=1024');
   background-position: center;
   background-size: cover;
   z-index: 1;
@@ -158,17 +156,8 @@ section .container {
     background: white;
     /*background-image: url('https://s3-us-west-2.amazonaws.com/omar-one/ScreenShot_CliO');*/
     background-image: url('https://s3-us-west-2.amazonaws.com/omar-one/Screen+Shot+2016-08-01+at+2.10.55+PM.png');
-    background-position: top center;
+    /*background-position: top center;*/
     background-size: cover;
-}
-
-.container-colab {
-  background-color: rgba(255,255,255,0.9);
-  /*background-image: url('https://s3-us-west-2.amazonaws.com/omar-one/ScreenShot_CliO');*/
-  /*padding-top: 1%;;
-  padding-bottom: 10%;
-  margin-right: 10%;
-  margin-left: 10%;*/
 }
 
 #story-indicators {
@@ -180,12 +169,6 @@ section .container {
 
 .container-indicators {
   background-color: rgba(255,255,255,0.9);
-  /*background: linear-gradient(135deg, white, lightGrey);*/
-  /*margin-top: 0%;
-  padding-top: 1%;
-  padding-bottom: 10%;
-  margin-right: 10%;
-  margin-left: 10%;*/
 }
 
 #story-webapps {
@@ -203,7 +186,6 @@ section .container {
     background: #00AA90;
 }
 
-
 #links i {
   color: #1D3667;
   font-size: 6em;
@@ -218,20 +200,6 @@ section .container {
   font-size: 1em;
   padding-bottom: 2%;
 }
-
-/*.link-items {
-  display: block;
-  float: left;
-}*/
-
-/*.link img a {
-  width: 10%;
-}
-
-.link img {
-  width: 200px;
-  height: 200px;
-}*/
 
 #contact {
     height: 100%;
