@@ -1,7 +1,7 @@
-# Omar M. (@omarchaeopteryx)
+# @OmarCodex
 
-Welcome to my personal site. This is a simple website built using HTML, CSS, and JavaScript.
+Welcome to my personal site. I'm a developer and analyst passionate about solving complex problems.  
 
-Please get in touch to collaborate: `omar.a.malik@icloud.com`
+Need help with a project? Want to collaborate? Let's talk: omar.a.malik@icloud.com
 
-Thanks!
+Thank you!
